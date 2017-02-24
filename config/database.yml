@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username:unbuntu
+  username: unbuntu
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -25,7 +25,7 @@ default: &default
 development:
   <<: *default
   database: bright_ideas_development
-  username:unbuntu
+  username: unbuntu
 
 
   # The specified database role being used to connect to postgres.
@@ -61,7 +61,7 @@ development:
 test:
   <<: *default
   database: bright_ideas_test
-  username:unbuntu
+  username: unbuntu
 
 
 # As with config/secrets.yml, you never want to store sensitive information,
